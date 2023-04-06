@@ -7,7 +7,7 @@ class Plugins {
     }
     } loadPlugins() {
     const bot = this.args.bot;
-    
+    // Kawaii#7615 plugin example
     bot.functionManager.createFunction({
     name: '$comment',
     type: 'djs',
@@ -36,6 +36,27 @@ class Plugins {
           return {
               code: d.util.setCode(data)
           }}
+          });
+     // belongs to aoi.js custom functions example
+          bot.functionManager.createFunction({
+            name: "$removeObjectProperty",
+            type: "djs",
+            code: async d => {
+              const data = d.util.aoiFunc(d);
+              if (data.err) return d.error(data.err);
+              const [propertyNamesStr, objectStr] = data.inside.splits;
+              if (!objectStr) return d.aoiError.fnError(d, 'custom', {}, 'Missing object');
+              if (!propertyNamesStr) return d.aoiError.fnError(d, 'custom', {}, 'Missing object property names');
+              const propertyNames = propertyNamesStr.split(",");
+              const object = JSON.parse(objectStr);
+              propertyNames.forEach(propertyName => {
+                delete object[propertyName];
+              });
+              data.result = JSON.stringify(object);
+              return {
+                code: d.util.setCode(data)
+              };
+            }
           });
 
     module.exports = {

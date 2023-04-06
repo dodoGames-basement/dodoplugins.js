@@ -1,4 +1,4 @@
-const { Plugins } = require ("./loader/plugins")
+const { Plugins } = require ("./loader/plugins.js")
 
 module.exports = {
   Plugins

@@ -1,5 +1,5 @@
 # dodoplugins.js
-an package dedicated to aoi.js v6 which loads few custom supposedly "special" functions
+an package dedicated to aoi.js v6 which loads few custom supposedly "special" functions.
 
 # what is this
 an package for aoi.js v6 as a plugin that loads some of the custom functions it has, for example `$sendColoredLog`
@@ -14,7 +14,7 @@ this will install the github version of the package
 you then load the package with the following
 ```js
 // define clients
-const { Plugins } = require("dodoplugins.js")
+const { Plugins } = require("@dodoGames/aoiplugins")
 const { AoiClient } = require("aoi.js");
 // setup aoi.js first
 const bot = new AoiClient({

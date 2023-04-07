@@ -21,8 +21,8 @@ class Plugins {
         }
       }
     });
-    
-bot.functionManager.createCustomFunction({
+    // belongs to my project Dodo Bot v1 custom func
+bot.functionManager.createFunction({
     name : '$os',
     type : 'djs',
     code : async d => {

@@ -15,6 +15,8 @@ class Plugins {
       type: 'djs',
       code: async d => {
         const data = d.util.aoiFunc(d);
+        const [text] = data.inside.splits;
+        if (!text) return d.aoiError.fnError(d, 'custom', {}, 'No Text was Provided');
         //nothing here, it's comment
         return {
           code: d.util.setCode(data)

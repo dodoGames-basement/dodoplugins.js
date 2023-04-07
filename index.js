@@ -1,6 +1,6 @@
-const { removeObjectProperty } = require("./loader/removeobject")
-const { sendColoredLog } = require("./loader/sendColoredLog")
-const { Comment } = require("./loader/comment")
+const { removeObjectProperty } = require("./loader/removeobject.js")
+const { sendColoredLog } = require("./loader/sendColoredLog.js")
+const { Comment } = require("./loader/comment.js")
 
 module.exports = {
   removeObjectProperty,

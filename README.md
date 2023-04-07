@@ -7,14 +7,19 @@ an package for aoi.js v6 as a plugin that loads some of the custom functions it 
 
 # setup
 ```js
+npm i dodoplugins.js
+```
+this will install the npm version of the package.
+
+additionally you can install the dev version of the package using the Github URL.
+```js
 npm i https://github.com/dodoGames-s-Studios/dodoplugins.js
 ```
-this will install the github version of the package
 
 you then load the package with the following
 ```js
 // define clients
-const { Plugins } = require("@dodoGames/aoiplugins")
+const { Plugins } = require("dodoplugins.js")
 const { AoiClient } = require("aoi.js");
 // setup aoi.js first
 const bot = new AoiClient({

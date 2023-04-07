@@ -5,7 +5,6 @@ an package dedicated to aoi.js v6 which loads few custom supposedly "special" fu
 an package for aoi.js v6 as a plugin that loads some of the custom functions it has, for example `$sendColoredLog`
 
 # setup
-currently i'm trying to figure out so this is my assumption for now.
 ```js
 npm i https://github.com/dodoGames-s-Studios/dodoplugins.js
 ```
@@ -28,6 +27,7 @@ const bot = new AoiClient({
 const plugins = new Plugins({ bot:bot }); 
 plugins.loadPlugins(); 
 ```
+this will enable all custom functions that were created in the package.
 
 # credits
 the source code on how this was setup belongs to `Kawaii#7615`, thank him/her later for the aoi.js plugins tutorial later.

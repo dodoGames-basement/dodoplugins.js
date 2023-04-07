@@ -4,11 +4,19 @@
 "description": "an package dedicated to aoi.js v6 which loads few custom supposedly special functions",
     "main": "./src/index.js",
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel --presets env src -d ./ --ignore src/index.test.js",
+    "dev": "babel --presets env src -d ./ --watch --ignore src/index.test.js",
+    "test": "jest --watch"
     },
     "keywords": [],
     "author": "dodoGames",
     "license": "ISC",
+    "devDependencies": {
+      "babel-cli": "^6.24.1",
+      "babel-plugin-transform-object-rest-spread": "^6.23.0",
+      "babel-preset-env": "^1.6.0",
+      "jest": "^27.5.1"
+    },
     "dependencies": {
       "chalk": "^4.1.2"
     }

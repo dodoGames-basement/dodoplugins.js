@@ -31,3 +31,6 @@ this will enable all custom functions that were created in the package.
 
 # credits
 the source code on how this was setup belongs to `Kawaii#7615`, thank him/her later for the aoi.js plugins tutorial later.
+* `Kawaii#7615`: for the aoi.js plugins tutorial later.
+* [`Blur`](https://github.com/dodoGames-s-Studios/dodoplugins.js/issues?q=is%3Apr+author%3ABumblebee-3): for helping me on getting this package to work.
+

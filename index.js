@@ -1,5 +1,9 @@
-const { Plugins } = require("./loader/plugins")
+const { removeObjectProperty } = require("./loader/removeobject")
+const { sendColoredLog } = require("./loader/sendColoredLog")
+const { Comment } = require("./loader/comment")
 
 module.exports = {
-  Plugins
+  removeObjectProperty,
+  sendColoredLog,
+  Comment
 };

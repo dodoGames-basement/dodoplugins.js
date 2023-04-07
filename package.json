@@ -2,7 +2,7 @@
     "name": "@dodoGames/aoiplugins",
     "version": "1.0.0-alpha",
 "description": "an package dedicated to aoi.js v6 which loads few custom supposedly special functions",
-    "main": "index.js",
+    "main": "./src/index.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
     },

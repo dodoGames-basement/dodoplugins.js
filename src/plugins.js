@@ -1,3 +1,4 @@
+const chalk = require('chalk');
 class Plugins {
     constructor(args) {
     this.args = args;
@@ -49,7 +50,6 @@ class Plugins {
         name: "$sendColoredLog",
         type: "djs",
         code: async d => {
-              const chalk = require('chalk');
               const data = d.util.aoiFunc(d);
               
           if (data.err) return d.error(data.err);

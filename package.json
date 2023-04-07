@@ -1,5 +1,5 @@
 {
-    "name": "@dodoGames/aoiplugins",
+    "name": "dodoplugins.js",
     "version": "1.0.0-alpha",
 "description": "an package dedicated to aoi.js v6 which loads few custom supposedly special functions",
     "main": "./src/index.js",

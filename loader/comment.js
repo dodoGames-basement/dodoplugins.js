@@ -5,7 +5,7 @@ class Comment {
     console.log("You have not inputted your aoi client! Exiting Code!");
     process.exit(0);
     }
-    } loadPlugins() {
+    } loadComment() {
     const bot = this.args.bot;
     
     // Kawaii#7615 plugin example

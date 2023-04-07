@@ -5,7 +5,7 @@ class sendColoredLog {
     console.log("You have not inputted your aoi client! Exiting Code!");
     process.exit(0);
     }
-    } loadPlugins() {
+    } loadsendColoredLog() {
     const bot = this.args.bot;
     
     // $sendColoredLog[text;hex code?]

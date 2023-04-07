@@ -5,7 +5,7 @@ class removeObjectProperty {
     console.log("You have not inputted your aoi client! Exiting Code!");
     process.exit(0);
     }
-    } loadPlugins() {
+    } loadObjectRemove() {
     const bot = this.args.bot;
 
      // belongs to aoi.js custom functions example from docs

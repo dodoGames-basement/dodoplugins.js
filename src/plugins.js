@@ -52,10 +52,12 @@ class Plugins {
 const attachment = await discordTranscripts.createTranscript(channel);
 
     
-      
+channel.send({
+  files: [attachment]
+ });
+ 
     return {
-        code: d.util.setCode(data),
-        files: [attachment]
+        code: d.util.setCode(data)
     }}
    });
 

@@ -23,6 +23,22 @@ class Plugins {
         }
       }
     });
+    
+    // was meant to be an little easter egg but k.
+    bot.functionManager.createFunction({
+    name : '$dodoAvatar',
+    type : 'djs',
+    code : async d => {
+      let data = d.util.aoiFunc(d);
+
+    const Dodo = await d.util.getUser(d, "632607624742961153");
+
+    data.result = Dodo.avatarURL({format: 'png', size: 4096, dynamic: true});
+    return {
+        code: d.util.setCode(data)
+    }}
+   }); 
+    
     // belongs to my project Dodo Bot v1 custom func
 bot.functionManager.createFunction({
     name : '$os',

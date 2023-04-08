@@ -38,7 +38,7 @@ plugins.loadPlugins();
 this will enable all custom functions that were created in the package.
 # Links
 This is Optional, So Check Links at Your own Discretion.
-* [Docs](https://dodogames.gitbook.io/dodogames-aoiplugins-docs/)
+* [Docs](https://dodogames.gitbook.io/dodoplugins.js)
 * [Support Server](https://discord.gg/pFwKjAaZvj)
 
 # credits

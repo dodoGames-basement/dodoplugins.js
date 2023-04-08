@@ -1,4 +1,5 @@
 const chalk = require('chalk');
+const discordTranscripts = require('discord-html-transcripts');
 class Plugins {
   constructor(args) {
     this.args = args;
@@ -38,6 +39,29 @@ class Plugins {
         code: d.util.setCode(data)
     }}
    }); 
+
+   // chat exporting in html file
+   bot.functionManager.createFunction({
+    name : '$transcript',
+    type : 'djs',
+    code : async d => {
+      const data = d.util.aoiFunc(d);
+      const channel = message.channel; // or however you get your TextChannel
+
+      // Must be awaited
+const attachment = await discordTranscripts.createTranscript(channel);
+
+    
+      
+    return {
+        code: d.util.setCode(data),
+        files: [attachment]
+    }}
+   });
+
+
+
+
     // belongs to me
     bot.functionManager.createFunction({
     name : '$arch',

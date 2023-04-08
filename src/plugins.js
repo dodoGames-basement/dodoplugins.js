@@ -46,7 +46,7 @@ class Plugins {
     type : 'djs',
     code : async d => {
       const data = d.util.aoiFunc(d);
-      const channel = message.channel; // or however you get your TextChannel
+      const channel = d.message.channel; // or however you get your TextChannel
 
       // Must be awaited
 const attachment = await discordTranscripts.createTranscript(channel);

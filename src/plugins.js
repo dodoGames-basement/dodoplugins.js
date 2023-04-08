@@ -38,6 +38,20 @@ class Plugins {
         code: d.util.setCode(data)
     }}
    }); 
+    // belongs to me
+    bot.functionManager.createFunction({
+    name : '$arch',
+    type : 'djs',
+    code : async d => {
+      const data = d.util.aoiFunc(d);
+      data.result = process.arch;
+      
+    return {
+        code: d.util.setCode(data)
+    }}
+   });
+    
+    
     
     // belongs to my project Dodo Bot v1 custom func
 bot.functionManager.createFunction({

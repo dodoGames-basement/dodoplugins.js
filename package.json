@@ -10,7 +10,17 @@
     },
     "keywords": [],
     "author": "dodoGames",
-    "license": "ISC",
+   "license": "Apache-2.0",
+    "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    }
+    ],
+     "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dodoGames-s-Studios/dodoplugins.js.git"
+    },
     "devDependencies": {
       "babel-cli": "^6.24.1",
       "babel-plugin-transform-object-rest-spread": "^6.23.0",

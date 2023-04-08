@@ -8,7 +8,14 @@
     "dev": "babel --presets env src -d ./ --watch --ignore src/index.test.js",
     "test": "jest --watch"
     },
-    "keywords": [],
+    "keywords": [
+    "aoi",
+    "aoi.js",
+    "plugin",
+    "aoi.js-plugins",
+    "dodoGames",
+    "Dodo"
+    ],
     "author": "dodoGames",
    "license": "Apache-2.0",
    "repository": {

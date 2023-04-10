@@ -13,9 +13,12 @@ npm i dodoplugins.js
 ```
 this will install the npm version of the package.
 
-additionally you can install the dev version of the package using the Github URL.
+additionally you can install the dev version of the package using either the npm or the Github URL.
 ```js
+// github method
 npm i https://github.com/dodoGames-s-Studios/dodoplugins.js
+// npm method
+npm i dodoplugins.js@alpha
 ```
 
 you then load the package with the following

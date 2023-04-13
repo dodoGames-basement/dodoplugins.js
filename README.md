@@ -34,7 +34,7 @@ const bot = new AoiClient({
     events: ["onMessage", "onInteractionCreate"]
 });
 
-// load it
+// loading the package
 const plugins = new Plugins({ bot:bot }); 
 plugins.loadPlugins(); 
 ```
@@ -43,6 +43,7 @@ this will enable all custom functions that were created in the package.
 This is Optional, So Check Links at Your own Discretion.
 * [Docs](https://dodogames.gitbook.io/dodoplugins.js)
 * [Support Server](https://discord.gg/pFwKjAaZvj)
+* [NPM page](https://www.npmjs.com/package/dodoplugins.js)
 
 # credits
 the source code on how this was setup belongs to `Kawaii#7615`, thank him/her later for the aoi.js plugins tutorial later.

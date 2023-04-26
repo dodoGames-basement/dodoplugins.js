@@ -1,6 +1,6 @@
 {
     "name": "dodoplugins.js",
-    "version": "1.0.2-alpha1",
+    "version": "1.0.2-preview",
 "description": "an package dedicated to aoi.js v6 which loads few custom supposedly special functions",
     "main": "./src/index.js",
     "scripts": {

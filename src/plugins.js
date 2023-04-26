@@ -84,7 +84,7 @@ const attachment = await discordTranscripts.createTranscript(channel, {
     
     // belongs to my project Dodo Bot v1 custom func
 bot.functionManager.createFunction({
-    name : '$os',
+    name : '$platform',
     type : 'djs',
     code : async d => {
       const data = d.util.aoiFunc(d);

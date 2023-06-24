@@ -40,32 +40,11 @@ class Plugins {
     }}
    }); 
 
-   // chat exporting in html file
-   bot.functionManager.createFunction({
-    name : '$transcript',
-    type : 'djs',
-    code : async d => {
-      const data = d.util.aoiFunc(d);
-      const channel = d.message.channel; // or however you get your TextChannel
-
-      // Must be awaited
-const attachment = await discordTranscripts.createTranscript(channel, {
-  limit: -1, // Max amount of messages to fetch. `-1` recursively fetches.
-  returnType: 'buffer', // Valid options: 'buffer' | 'string' | 'attachment' Default: 'attachment' OR use the enum ExportReturnType
-  filename: 'transcript.html', // Only valid with returnType is 'attachment'. Name of attachment.
-  saveImages: true, // Download all images and include the image data in the HTML (allows viewing the image even after it has been deleted) (! WILL INCREASE FILE SIZE !)
-  footerText: "Exported {number} message{s}", // Change text at footer, don't forget to put {number} to show how much messages got exported, and {s} for plural
-  poweredBy: false // Whether to include the "Powered by discord-html-transcripts" footer
-});
-    
-    return {
-        code: d.util.setCode(data),
-        files: [attachment]
-    }}
-   });
-
-
-
+  bot.functionManager.createFunction({
+  name: "$ifv6",
+  type: "djs",
+  code: async d => bot.functionManager.cache.get("if").code(d)
+})
 
     // belongs to me
     bot.functionManager.createFunction({
@@ -96,29 +75,6 @@ bot.functionManager.createFunction({
     }}
    });
     
-
-    // belongs to aoi.js custom functions example from docs
-    bot.functionManager.createFunction({
-      name: "$removeObjectProperty",
-      type: "djs",
-      code: async d => {
-        const data = d.util.aoiFunc(d);
-        if (data.err) return d.error(data.err);
-        const [propertyNamesStr, objectStr] = data.inside.splits;
-        if (!objectStr) return d.aoiError.fnError(d, 'custom', {}, 'Missing object');
-        if (!propertyNamesStr) return d.aoiError.fnError(d, 'custom', {}, 'Missing object property names');
-        const propertyNames = propertyNamesStr.split(",");
-        const object = JSON.parse(objectStr);
-        propertyNames.forEach(propertyName => {
-          delete object[propertyName];
-        });
-        data.result = JSON.stringify(object);
-        return {
-          code: d.util.setCode(data)
-        };
-      }
-    });
-
     // $sendColoredLog[text;hex code?]
     bot.functionManager.createFunction({
       name: "$sendColoredLog",

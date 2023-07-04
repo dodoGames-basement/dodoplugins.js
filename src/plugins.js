@@ -12,7 +12,7 @@ class Plugins {
 
     // Kawaii#7615 plugin example
     bot.functionManager.createFunction({
-      name: '$comment',
+      name: '$ignore',
       type: 'djs',
       code: async d => {
         const data = d.util.aoiFunc(d);

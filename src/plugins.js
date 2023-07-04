@@ -24,6 +24,15 @@ class Plugins {
         }
       }
     });
+
+bot.functionManager.createFunction({
+  name: "$clientAvatar", 
+  params: [],
+  type: "aoi.js", 
+  code: ` 
+    $userAvatar[$clientID]
+  ` 
+})
     
     // was meant to be an little easter egg but k.
     bot.functionManager.createFunction({

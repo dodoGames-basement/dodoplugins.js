@@ -1,7 +1,7 @@
 # dodoplugins.js
 An package dedicated to aoi.js v6 which loads functions to simplify bot development
 # Disclaimer
-This package (`dodoplugins.js`) is not made by official aoi.js developers, and so therefore, do not request support for the package's function in their official support server. instead request the support for it by either joining our [support server](https://discord.gg/pFwKjAaZvj) or from [Github Issues](https://github.com/dodoGames-s-Studios/dodoplugins.js/issues/new/choose).
+This package (`dodoplugins.js`) is not made by official aoi.js developers, and so therefore, do not request support for the package's function in their official support server, instead request the support for it by either joining our [support server](https://discord.gg/pFwKjAaZvj) or from [Github Issues](https://github.com/dodoGames-s-Studios/dodoplugins.js/issues/new/choose).
 # What is this
 An package for aoi.js v6 as a plugin that loads some of the custom functions it has, for example `$sendColoredLog`!
 # Why does this exist?

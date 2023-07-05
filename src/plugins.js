@@ -39,6 +39,15 @@ $onlyIf[$messageExists[$replaceText[$replaceText[$checkCondition[{messageID}==||
      
 })
     
+bot.functionManager.createFunction({
+  name: "$version", 
+  params: [],
+  type: "aoi.js", 
+  code: ` 
+    1.1.0-beta.1
+  ` 
+})
+
     
 bot.functionManager.createFunction({
   name: "$clientAvatar", 

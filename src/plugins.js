@@ -1,5 +1,4 @@
 const chalk = require('chalk');
-const discordTranscripts = require('discord-html-transcripts');
 class Plugins {
   constructor(args) {
     this.args = args;
@@ -25,6 +24,13 @@ class Plugins {
       }
     });
 
+    bot.functionManager.createFunction({
+    name: "$mentionAuthor", 
+    params: [], 
+    type: "aoi.js", 
+    code: "<@$authorID>" 
+});
+    
     bot.functionManager.createFunction({
   name: "$isBoostMessage", 
   params: ["messageID"],

@@ -105,7 +105,31 @@ bot.functionManager.createFunction({
         code: d.util.setCode(data)
     }}
    });
-    
+
+bot.functionManager.createFunction({
+    name : '$clientAboutMe',
+    type : 'djs',
+    code : async d => {
+      const data = d.util.aoiFunc(d);
+      data.result = d.client.application.description;
+      
+    return {
+        code: d.util.setCode(data)
+    }}
+   });
+
+
+    bot.functionManager.createFunction({
+    name : '$IsclientPublic',
+    type : 'djs',
+    code : async d => {
+      const data = d.util.aoiFunc(d);
+      data.result = d.client.application.botPublic;
+      
+    return {
+        code: d.util.setCode(data)
+    }}
+   });
     
     
     // belongs to my project Dodo Bot v1 custom func

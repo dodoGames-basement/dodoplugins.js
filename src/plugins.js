@@ -40,15 +40,14 @@ class Plugins {
 });
     
     bot.functionManager.createFunction({
-  name: "$isBoostMessage", 
+  name: "$isboostmessage", 
   params: ["messageID"],
   type: "aoi.js", 
   code: ` 
-    $ifAwaited[$checkContains[$messageType[$replaceText[$replaceText[$checkCondition[{messageID}==||{messageID}==undefined];true;$messageID];false;{messageID}]];8;9;10;11]==true;true;false]
+    $checkContains[$messageType[$get[messageidchecker]];8;9;10;11]
 
 
-
-$onlyIf[$messageExists[$replaceText[$replaceText[$checkCondition[{messageID}==||{messageID}==undefined];true;$messageID];false;{messageID}]]==true;dodoplugins.js Error: The message id is either invalid or does not exist]
+$let[messageidchecker;$replaceText[$replaceText[$checkCondition[$messageExists[{messageID}]==true];true;{messageID}];false;$messageID]]
   ` 
      
 })

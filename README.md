@@ -15,7 +15,7 @@ npm i dodoplugins.js@latest
 ```
 This will install the npm version of the package.
 
-You can also use other version of the package such as:
+You can also use other versions of the package such as:
 ```js
 // Beta version
 npm i dodoplugins.js@beta

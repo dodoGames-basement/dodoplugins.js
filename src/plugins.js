@@ -65,11 +65,16 @@ bot.functionManager.createFunction({
     
 bot.functionManager.createFunction({
   name: "$clientAvatar", 
-  params: [],
-  type: "aoi.js", 
-  code: ` 
-    $userAvatar[$clientID]
-  ` 
+  type: "djs", 
+  code: async d => {
+      let data = d.util.aoiFunc(d);
+    const botid = d.client.user.id;
+    const Bot = await d.util.getUser(d, botid);
+
+    data.result = Bot.avatarURL({format: 'png', size: 4096, dynamic: true});
+    return {
+        code: d.util.setCode(data)
+    }}
 })
     
     // was meant to be an little easter egg but k.

@@ -31,6 +31,14 @@ class Plugins {
     type: "aoi.js", 
     code: `$randomText[Did you go out today?;What did you eat today?;What are you currently worried about?;What game have you spent the most hours playing?;What game have you spent the most hours playing?;What movie can you watch over and over without ever getting tired of?;What are you interested in that most people aren't?;How do you judge a person?;What do you think you are much better at than you actually are?;Do you enjoy spicy food?]` 
 });
+
+bot.functionManager.createFunction({
+    name: "$noMentionReply", 
+    params: [], 
+    type: "aoi.js", 
+    code: `$reply[$messageID;false]` 
+});
+
     
     bot.functionManager.createFunction({
     name: "$mentionAuthor", 

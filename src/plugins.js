@@ -26,14 +26,14 @@ class Plugins {
 
 
      bot.functionManager.createFunction({
-    name: "$randomTopic", 
+    name: "$randomtopic", 
     params: [], 
     type: "aoi.js", 
     code: `$randomText[Did you go out today?;What did you eat today?;What are you currently worried about?;What game have you spent the most hours playing?;What game have you spent the most hours playing?;What movie can you watch over and over without ever getting tired of?;What are you interested in that most people aren't?;How do you judge a person?;What do you think you are much better at than you actually are?;Do you enjoy spicy food?]` 
 });
 
 bot.functionManager.createFunction({
-    name: "$noMentionReply", 
+    name: "$nomentionreply", 
     params: [], 
     type: "aoi.js", 
     code: `$reply[$messageID;false]` 
@@ -41,7 +41,7 @@ bot.functionManager.createFunction({
 
     
     bot.functionManager.createFunction({
-    name: "$mentionAuthor", 
+    name: "$mentionauthor", 
     params: [], 
     type: "aoi.js", 
     code: `<@$authorID>` 
@@ -49,13 +49,13 @@ bot.functionManager.createFunction({
     
     bot.functionManager.createFunction({
   name: "$isboostmessage", 
-  params: ["messageID"],
+  params: ["messageid"],
   type: "aoi.js", 
   code: ` 
     $checkContains[$messageType[$get[messageidchecker]];8;9;10;11]
 
 
-$let[messageidchecker;$replaceText[$replaceText[$checkCondition[$messageExists[{messageID}]==true];true;{messageID}];false;$messageID]]
+$let[messageidchecker;$replaceText[$replaceText[$checkCondition[$messageExists[{messageid}]==true];true;{messageid}];false;$messageID]]
   ` 
      
 })

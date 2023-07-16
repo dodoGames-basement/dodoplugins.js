@@ -65,7 +65,7 @@ bot.functionManager.createFunction({
   params: [],
   type: "aoi.js", 
   code: ` 
-    1.1.0-beta.2
+    1.1.0-beta.3
   ` 
 })
 

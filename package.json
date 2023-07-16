@@ -1,6 +1,6 @@
 {
     "name": "dodoplugins.js",
-    "version": "1.1.0-beta.2",
+    "version": "1.1.0-beta.3",
 "description": "An package dedicated to aoi.js v6 which loads functions to simplify bot development",
     "main": "./src/index.js",
     "scripts": {

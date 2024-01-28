@@ -1,3 +1,8 @@
+# Deprecation notice
+This package is no longer maintained and has since been discontinued. No new updates will be ever made after that as custom functions in aoi.js don't even work in the first place.
+
+You're better off using aoi.js extensions instead as they're much better than this random package i made.
+
 # dodoplugins.js
 An package dedicated to aoi.js v6 which loads functions to simplify bot development
 # Disclaimer
